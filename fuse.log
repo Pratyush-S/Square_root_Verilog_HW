@@ -1,0 +1,18 @@
+Running: X:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit_isim_beh.exe -prj X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit_beh.prj work.M1_DigitByDigit work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit.v" into library work
+WARNING:HDLCompiler:751 - "X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit.v" Line 31: Redeclaration of ansi port sqrr is not allowed
+Analyzing Verilog file "X:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module M1_DigitByDigit
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 2 Verilog Units
+Built simulation executable X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit_isim_beh.exe
+Fuse Memory Usage: 27360 KB
+Fuse CPU Usage: 577 ms

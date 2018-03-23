@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit_isim_beh.exe" -prj "X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit_beh.prj" "work.M1_DigitByDigit" "work.glbl" 

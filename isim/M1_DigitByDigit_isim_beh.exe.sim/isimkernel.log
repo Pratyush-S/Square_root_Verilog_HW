@@ -1,0 +1,28 @@
+Command line:
+   M1_DigitByDigit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64367
+
+Sat Mar 24 02:45:19 2018
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 1033.68 Meg
+
+ Total Signals          : 16
+ Total Nets             : 27
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 140
+
+ Total Simulation Time: 0.28125 sec
+
+ Current Memory Usage: 876.392 Meg
+
+Sat Mar 24 02:48:07 2018
+

@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to X:/GITHUB/Square_root_Verilog_HW/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Parameter xsthdpdir set to X:/GITHUB/Square_root_Verilog_HW/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Reading design: M1_DigitByDigit.prj
 
@@ -45,7 +45,7 @@ WARNING:HDLCompiler:751 - "X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" L
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.04 secs
+Total CPU time to Xst completion: 5.63 secs
  
 --> 
 

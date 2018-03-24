@@ -39,37 +39,35 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1521838792" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1521838792">
+    <transform xil_pn:end_ts="1521880068" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1521880068">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1521839690" xil_pn:in_ck="5323135062036170686" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1521839690">
+    <transform xil_pn:end_ts="1521891347" xil_pn:in_ck="5323135062036170686" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1521891347">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="M1_DigitByDigit.v"/>
     </transform>
-    <transform xil_pn:end_ts="1521838801" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6171509592137009393" xil_pn:start_ts="1521838801">
+    <transform xil_pn:end_ts="1521880068" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6171509592137009393" xil_pn:start_ts="1521880068">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1521838801" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2664192624354270545" xil_pn:start_ts="1521838801">
+    <transform xil_pn:end_ts="1521880068" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2664192624354270545" xil_pn:start_ts="1521880068">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1521838801" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5512669294678400094" xil_pn:start_ts="1521838801">
+    <transform xil_pn:end_ts="1521880068" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5512669294678400094" xil_pn:start_ts="1521880068">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1521839709" xil_pn:in_ck="5323135062036170686" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1521839709">
+    <transform xil_pn:end_ts="1521891404" xil_pn:in_ck="5323135062036170686" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1521891404">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="M1_DigitByDigit.v"/>
     </transform>
-    <transform xil_pn:end_ts="1521839715" xil_pn:in_ck="5323135062036170686" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="9082809622214548833" xil_pn:start_ts="1521839709">
+    <transform xil_pn:end_ts="1521891413" xil_pn:in_ck="5323135062036170686" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="9082809622214548833" xil_pn:start_ts="1521891404">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="M1_DigitByDigit_beh.prj"/>
       <outfile xil_pn:name="M1_DigitByDigit_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -77,11 +75,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1521839716" xil_pn:in_ck="1200504904435633449" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7306257964078148804" xil_pn:start_ts="1521839715">
+    <transform xil_pn:end_ts="1521891414" xil_pn:in_ck="1200504904435633449" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7306257964078148804" xil_pn:start_ts="1521891413">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="M1_DigitByDigit_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

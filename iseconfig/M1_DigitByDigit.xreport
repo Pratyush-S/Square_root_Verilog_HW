@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-03-24T00:39:51</DateModified>
+  <DateModified>2018-03-24T11:55:56</DateModified>
   <ModuleName>M1_DigitByDigit</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>X:/GITHUB/Square_root_Verilog_HW/iseconfig/M1_DigitByDigit.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>X:/GITHUB/Square_root_Verilog_HW</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>X:/GITHUB/Square_root_Verilog_HW\</ImplementationReportsDirectory>
   <DateInitialized>2018-03-24T00:37:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

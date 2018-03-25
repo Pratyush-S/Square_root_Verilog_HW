@@ -1,0 +1,28 @@
+Command line:
+   M2_Babylonian_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50311
+
+Sat Mar 24 19:22:28 2018
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 1033.7 Meg
+
+ Total Signals          : 17
+ Total Nets             : 45
+ Total Signal Drivers   : 5
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 134
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 1033.7 Meg
+
+Sat Mar 24 19:30:19 2018
+

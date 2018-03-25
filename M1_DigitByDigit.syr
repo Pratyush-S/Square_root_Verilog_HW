@@ -1,0 +1,445 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: M1_DigitByDigit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "M1_DigitByDigit.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "M1_DigitByDigit"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : M1_DigitByDigit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" into library work
+Parsing module <M1_DigitByDigit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <M1_DigitByDigit>.
+WARNING:HDLCompiler:413 - "X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 44: Result of 18-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 47: Result of 25-bit expression is truncated to fit in 22-bit target.
+WARNING:HDLCompiler:413 - "X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 48: Result of 16-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:413 - "X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 52: Result of 16-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:413 - "X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 54: Result of 10-bit expression is truncated to fit in 9-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <M1_DigitByDigit>.
+    Related source file is "X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v".
+    Found 15-bit register for signal <sqrr>.
+    Found 22-bit register for signal <base>.
+    Found 9-bit register for signal <i>.
+    Found 22-bit subtractor for signal <base[15]_GND_1_o_sub_12_OUT> created at line 51.
+    Found 17-bit adder for signal <n0031> created at line 44.
+    Found 24-bit adder for signal <n0033> created at line 47.
+    Found 15-bit adder for signal <sqrr[7]_GND_1_o_add_12_OUT> created at line 52.
+    Found 5-bit subtractor for signal <i[8]_GND_1_o_sub_8_OUT<4:0>> created at line 46.
+    Found 9-bit subtractor for signal <i[8]_GND_1_o_sub_16_OUT<8:0>> created at line 54.
+    Found 1-bit 22-to-1 multiplexer for signal <i[8]_num[-1]_Mux_6_o> created at line 45.
+    Found 1-bit 22-to-1 multiplexer for signal <i[8]_num[-1]_Mux_8_o> created at line 46.
+    Found 32-bit comparator greater for signal <i[8]_PWR_1_o_LessThan_5_o> created at line 42
+    Found 22-bit comparator lessequal for signal <n0011> created at line 49
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  10 Multiplexer(s).
+Unit <M1_DigitByDigit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 15-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 22-bit subtractor                                     : 1
+ 24-bit adder                                          : 1
+ 5-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 3
+ 15-bit register                                       : 1
+ 22-bit register                                       : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 2
+ 22-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 10
+ 1-bit 22-to-1 multiplexer                             : 2
+ 15-bit 2-to-1 multiplexer                             : 3
+ 22-bit 2-to-1 multiplexer                             : 3
+ 9-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 11-bit adder                                          : 1
+ 15-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 22-bit subtractor                                     : 1
+ 5-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 46
+ Flip-Flops                                            : 46
+# Comparators                                          : 2
+ 22-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 10
+ 1-bit 22-to-1 multiplexer                             : 2
+ 15-bit 2-to-1 multiplexer                             : 3
+ 22-bit 2-to-1 multiplexer                             : 3
+ 9-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <base_14> of sequential type is unconnected in block <M1_DigitByDigit>.
+WARNING:Xst:2677 - Node <base_15> of sequential type is unconnected in block <M1_DigitByDigit>.
+
+Optimizing unit <M1_DigitByDigit> ...
+WARNING:Xst:1710 - FF/Latch <i_0> (without init value) has a constant value of 1 in block <M1_DigitByDigit>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <i_4> in Unit <M1_DigitByDigit> is equivalent to the following 4 FFs/Latches, which will be removed : <i_5> <i_6> <i_7> <i_8> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block M1_DigitByDigit, actual ratio is 2.
+FlipFlop i_3 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : M1_DigitByDigit.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 172
+#      GND                         : 1
+#      LUT2                        : 38
+#      LUT3                        : 18
+#      LUT4                        : 13
+#      LUT5                        : 23
+#      LUT6                        : 28
+#      MUXCY                       : 28
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 41
+#      FD                          : 41
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 38
+#      IBUF                        : 23
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              41  out of  11440     0%  
+ Number of Slice LUTs:                  120  out of   5720     2%  
+    Number used as Logic:               120  out of   5720     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    123
+   Number with an unused Flip Flop:      82  out of    123    66%  
+   Number with an unused LUT:             3  out of    123     2%  
+   Number of fully used LUT-FF pairs:    38  out of    123    30%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of    102    38%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 41    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.139ns (Maximum Frequency: 140.085MHz)
+   Minimum input arrival time before clock: 10.787ns
+   Maximum output required time after clock: 4.277ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.139ns (frequency: 140.085MHz)
+  Total number of paths / destination ports: 3042 / 41
+-------------------------------------------------------------------------
+Delay:               7.139ns (Levels of Logic = 13)
+  Source:            i_2 (FF)
+  Destination:       base_-6 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: i_2 to base_-6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.525   0.976  i_2 (i_2)
+     LUT6:I5->O            2   0.254   0.726  i[8]_GND_1_o_sub_8_OUT<4>_SW0_SW2 (N18)
+     LUT6:I5->O            1   0.254   0.000  i[8]_GND_1_o_sub_8_OUT<4>_SW0_G (N29)
+     MUXF7:I1->O           2   0.175   0.726  i[8]_GND_1_o_sub_8_OUT<4>_SW0 (N10)
+     LUT4:I3->O            2   0.254   1.002  i[8]_GND_1_o_sub_8_OUT<4> (i[8]_num[-1]_Mux_8_o)
+     LUT4:I0->O            1   0.254   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_lut<0> (Mcompar_GND_1_o_base[15]_LessThan_11_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<0> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<1> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<2> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<3> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<4> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<5> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<5>)
+     MUXCY:CI->O          21   0.023   1.310  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<6> (GND_1_o_base[15]_LessThan_11_o)
+     LUT6:I5->O            1   0.254   0.000  Mmux_base[15]_base[15]_mux_16_OUT121 (base[15]_base[15]_mux_16_OUT<1>)
+     FD:D                      0.074          base_-5
+    ----------------------------------------
+    Total                      7.139ns (2.399ns logic, 4.740ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4792 / 41
+-------------------------------------------------------------------------
+Offset:              10.787ns (Levels of Logic = 15)
+  Source:            reset (PAD)
+  Destination:       base_-6 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to base_-6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           104   1.328   2.449  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            1   0.235   1.137  i[8]_GND_1_o_sub_8_OUT<4>_SW0_SW2_SW0 (N24)
+     LUT6:I0->O            2   0.254   0.726  i[8]_GND_1_o_sub_8_OUT<4>_SW0_SW2 (N18)
+     LUT6:I5->O            1   0.254   0.000  i[8]_GND_1_o_sub_8_OUT<4>_SW0_G (N29)
+     MUXF7:I1->O           2   0.175   0.726  i[8]_GND_1_o_sub_8_OUT<4>_SW0 (N10)
+     LUT4:I3->O            2   0.254   1.002  i[8]_GND_1_o_sub_8_OUT<4> (i[8]_num[-1]_Mux_8_o)
+     LUT4:I0->O            1   0.254   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_lut<0> (Mcompar_GND_1_o_base[15]_LessThan_11_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<0> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<1> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<2> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<3> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<4> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<5> (Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<5>)
+     MUXCY:CI->O          21   0.023   1.310  Mcompar_GND_1_o_base[15]_LessThan_11_o_cy<6> (GND_1_o_base[15]_LessThan_11_o)
+     LUT6:I5->O            1   0.254   0.000  Mmux_base[15]_base[15]_mux_16_OUT121 (base[15]_base[15]_mux_16_OUT<1>)
+     FD:D                      0.074          base_-5
+    ----------------------------------------
+    Total                     10.787ns (3.436ns logic, 7.350ns route)
+                                       (31.9% logic, 68.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              4.277ns (Levels of Logic = 1)
+  Source:            sqrr_1 (FF)
+  Destination:       sqrr<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sqrr_1 to sqrr<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.525   0.840  sqrr_1 (sqrr_1)
+     OBUF:I->O                 2.912          sqrr_1_OBUF (sqrr<1>)
+    ----------------------------------------
+    Total                      4.277ns (3.437ns logic, 0.840ns route)
+                                       (80.4% logic, 19.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.139|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.82 secs
+ 
+--> 
+
+Total memory usage is 329240 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

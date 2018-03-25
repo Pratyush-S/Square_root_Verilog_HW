@@ -19,29 +19,28 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module M1_DigitByDigit(
-    input [5:0] num,
-    output [2:0] sqrr,
+    input [15:-6] num,
+    output reg [7:-7] sqrr,
     input clk,
 	 input reset
     );
     reg a,b;
-	// reg [5:0]chain;
-	 reg [7:0]div;
-	 reg [5:0]base;
-	 reg [5:0] sqrr;
-	 reg [4:0]i;
+	 reg [10:0]div;
+	 reg [15:-6]base;
+	 reg signed [8:0]i; ////check
 	 
-	 always@(posedge reset)
+	 
+	 always@(posedge clk )
 	 begin
-	 i<=5;
-	 sqrr<=0;
-	 base<=0;
+	 if(reset)
+	 begin
+	 i=15;
+	 sqrr=0;
+	 base=0;
 	 end
-	 
-	 always@(posedge clk && !reset )
+
+	 if(!reset && i>-8)
 	 begin
-	 //if(!reset ) 
-	 //begin
 	 div=(sqrr*4)+2'b01;
 	 a=num[i];
 	 b=num[i-1];
@@ -51,11 +50,10 @@ module M1_DigitByDigit(
 	 begin
 	 base=base-div;
 	 sqrr=sqrr+1;
-	 //sqrr=sqrr*2;
-	 end // if
+	 end
 	 i=i-2;
+	 end
 	 
-	 //end  //parent if
-	 end //for always
-
+	 end
+	
 endmodule

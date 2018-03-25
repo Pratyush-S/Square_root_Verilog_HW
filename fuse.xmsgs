@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit.v" Line 31: Redeclaration of ansi port <arg fmt="%s" index="1">sqrr</arg> is not allowed
-</msg>
-
 </messages>
 

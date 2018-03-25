@@ -5,8 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="751" delta="old" >"X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 31: Redeclaration of ansi port <arg fmt="%s" index="1">sqrr</arg> is not allowed
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 44: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 47: Result of <arg fmt="%d" index="1">25</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">22</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 48: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 52: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"X:\GITHUB\Square_root_Verilog_HW\M1_DigitByDigit.v" Line 54: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">base_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M1_DigitByDigit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">base_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">M1_DigitByDigit</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">i_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">M1_DigitByDigit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">i_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">M1_DigitByDigit</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_5&gt; &lt;i_6&gt; &lt;i_7&gt; &lt;i_8&gt; </arg>
 </msg>
 
 </messages>
-

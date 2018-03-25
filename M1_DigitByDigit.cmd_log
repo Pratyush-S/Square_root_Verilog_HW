@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit.xst" -ofn "X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit.syr" 
+xst -intstyle ise -ifn "X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit.xst" -ofn "X:/GITHUB/Square_root_Verilog_HW/M1_DigitByDigit.syr" 

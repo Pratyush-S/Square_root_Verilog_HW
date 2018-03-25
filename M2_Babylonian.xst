@@ -1,11 +1,8 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn M1_DigitByDigit.prj
--ofn M1_DigitByDigit
--ofmt NGC
+set -tmpdir "X:/GITHUB/Square_root_Verilog_HW/xst/projnav.tmp"
+set -xsthdpdir "X:/GITHUB/Square_root_Verilog_HW/xst"
+run -compileonly yes
 -p xc6slx9-2-tqg144
--top M1_DigitByDigit
+-top M2_Babylonian
 -opt_mode Speed
 -opt_level 1
 -power NO
@@ -50,3 +47,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn M2_Babylonian.prj

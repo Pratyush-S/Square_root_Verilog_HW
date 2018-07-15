@@ -15,3 +15,4 @@ Step 4. Choose 1 squared, and then subtract. Fist developed root is “1” if t
 Step 6. Go to step 5 until end group of two digits. To calculate square root of a 2n bit number, n number of iterations are required. </br>
 Step 7. End</br>
 
+NOTE: open Square_root_Verilog_HW.xise for accessing the project.
